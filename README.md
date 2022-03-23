@@ -1,7 +1,6 @@
 # DummiesGuideToWeeb
 
 <h1 align="center">Dummies Guide To Weeb</h1>
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ## Description
 Beginner's guide to the vast world of anime
