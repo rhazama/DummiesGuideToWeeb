@@ -1,2 +1,2 @@
 # DummiesGuideToWeeb
-Beginner's guide to the world of anime
+Beginner's guide to the vast world of anime
