@@ -18,7 +18,7 @@ Run the application by clicking the following link: <link>
 This application is covered by the MIT license. 
 
 ## Contributing
-Ryan Hazama, Taylor Hernandez, Sam Pena-Lora
+Ryan Hazama, Taylor Hernandez, Sam Pena-Lora, Harutyuh Makaryan
 
 ## Questions
 Email rhazama01@gmail.com
