@@ -1,4 +1,4 @@
-Dummies Guide To Weeb
+# DummiesGuideToWeeb
 
 ## Description
 Beginner's guide to the vast world of anime
