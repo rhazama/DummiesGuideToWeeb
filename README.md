@@ -1,5 +1,3 @@
-# DummiesGuideToWeeb
-
 <h1 align="center">Dummies Guide To Weeb</h1>
 
 ## Description
