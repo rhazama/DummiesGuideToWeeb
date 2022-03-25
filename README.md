@@ -1,4 +1,4 @@
-<h1 align="center">Dummies Guide To Weeb</h1>
+#Dummies Guide To Weeb
 
 ## Description
 Beginner's guide to the vast world of anime
