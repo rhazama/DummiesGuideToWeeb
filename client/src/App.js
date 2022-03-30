@@ -6,6 +6,7 @@ import Anime from './pages/Anime.js';
 import './App.css';
 
 function App() {
+  //Connect API
   return (
     <div className="App">
       
