@@ -1,7 +1,5 @@
 # DummiesGuideToWeeb
 
-<h1 align="center">Dummies Guide To Weeb</h1>
-
 ## Description
 Beginner's guide to the vast world of anime
 
@@ -20,7 +18,7 @@ Run the application by clicking the following link: <link>
 This application is covered by the MIT license. 
 
 ## Contributing
-Ryan Hazama, Taylor Hernandez, Sam Pena-Lora
+Ryan Hazama, Taylor Hernandez, Sam Pena-Lora, Harry Makaryan
 
 ## Questions
 Email rhazama01@gmail.com
