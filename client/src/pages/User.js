@@ -1,8 +1,8 @@
 import Rect from "react";
 
-const Homepage =()=> {
+const user =()=> {
     return(
-
+<h1>My Dashboard</h1>
     )
 }
 

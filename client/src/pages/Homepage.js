@@ -1,7 +1,11 @@
 import Rect from "react";
 
+
 const Homepage =()=> {
-    return(
+    return(<div>
+    <h1>Check render</h1>>
+         
+      </div>
 
     )
 }
