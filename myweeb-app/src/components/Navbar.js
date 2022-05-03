@@ -1,5 +1,4 @@
 import User from './pages/User.js';
-import Anime from './pages/Anime.js';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, NavItem, Container, Modal, Tab } from 'react-materialize';
