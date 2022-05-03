@@ -2,7 +2,9 @@ const { Schema } = require('mongoose');
 
 const animeSchema = new Schema({
     animeTitle: [
-        {type: String,},
+        {
+        type: String,
+        },
     ],
     description: {
         type: String, 
@@ -16,6 +18,10 @@ const animeSchema = new Schema({
         type: string,
     },
     link: {
+        type: String,
+        required: true,
+    },
+    title: {
         type: String,
         required: true,
     },
