@@ -6,7 +6,7 @@ const typeDefs = gql`
         username: String!
         email: String!
         animeCount: Int!
-        savedAnime: [anime]
+        savedAnime: [Anime]
     }
     type Anime {
         animeId: ID!
@@ -28,13 +28,13 @@ const typeDefs = gql`
         link: String
         title: String!
     }
-    type: Query {
+    type Query {
         me: User
     }
     type Mutation {
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, passwrod: String!): Auth
-        saveAnime(animeData: BookInput!): User
+        saveAnime(animeData: AnimeInput!): User
         removeAnime(animeId: ID!): User
     }
     `;

@@ -1,7 +1,7 @@
-import User from './pages/User.js';
+import User from '../pages/User';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, NavItem, Container, Modal, Tab } from 'react-materialize';
+import { Navbar, NavItem, Container, Modal, Tab } from 'materialize-css';
 import SignUpForm from './SignupForm';
 import LoginForm from './LoginForm';
 

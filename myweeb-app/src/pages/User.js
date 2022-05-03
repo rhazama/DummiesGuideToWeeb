@@ -7,7 +7,7 @@ import {
     Button,
     Card,
     Column,
-    Row,} from 'react-materialize';
+    Row,} from 'materialize-css';
 
 import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_ME } from '../utils/queries';

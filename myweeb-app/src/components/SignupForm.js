@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Button, Alert } from 'react-materialize';
+// import { TextInput, Button, Alert } from 'react-materialize';
 
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
+
+import { M, Form, Alert, Button } from 'materialize-css';
 
 const SignupForm = () => {
   // set initial form state

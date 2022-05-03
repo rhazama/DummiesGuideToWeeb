@@ -1,8 +1,8 @@
 // see SignupForm.js for comments
 
 import React, { useState, useEffect } from 'react';
-import { Form, Button, Alert } from 'react-materialize';
-
+// import { Form, Button, Alert } from 'react-materialize';
+import { M, Form, Alert, Button } from 'materialize-css';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
 

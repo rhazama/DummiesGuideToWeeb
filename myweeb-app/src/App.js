@@ -7,6 +7,7 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+import 'materialize-css/dist/css/materialize.min.css';
 
 import { useState, useEffect } from 'react';
 import Header from './components/Header';

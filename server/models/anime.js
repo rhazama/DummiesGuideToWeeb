@@ -15,7 +15,7 @@ const animeSchema = new Schema({
         required: true,
     },
     image: {
-        type: string,
+        type: String
     },
     link: {
         type: String,

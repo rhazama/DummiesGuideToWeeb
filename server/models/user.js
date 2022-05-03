@@ -44,7 +44,7 @@ userSchema.methods.isCorrectPassword = async function (password) {
     return bcrypt.compare(password, this.password);
 };
 
-// when we get a query a user, we will also get another field called 'animeCount' with the number of save saved books we have
+// when we get a query a user, we will also get another field called 'animeCount' with the number of save animes we have
 userSchema.virtual('animeCount').get(function () {
     return this.savedAnime.length;
 });
