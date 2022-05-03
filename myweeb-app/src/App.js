@@ -1,7 +1,41 @@
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
+
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
+
+import User from './pages/User';
+import Navbar from './components/Navbar'
+
+const httpLink = createHttpLink ({
+	uri: '/graphql'
+  });
+  
+  const authLink = setContext((_, { headers }) => {
+	const token = localStorage.getItem('id_token');
+  
+	return {
+	  headers: {
+		...headers,
+		authorization: token ? `Bearer ${token}` : '',
+	  },
+	};
+  });
+  
+  const client = new ApolloClient({
+	link: authLink.concat(httpLink),
+	Cache: new InMemoryCache(),
+  });
+
 
 function App() {
 	const [animeList, SetAnimeList] = useState([]);
@@ -35,6 +69,14 @@ function App() {
 	return (
 		<div className="App">
 			<Header />
+			<Router>
+				<Navbar/>
+				<Switch>
+					<Route exact path="/user" component={User} />
+					<Route render={() => <h1 className="display-2">Sorry wrong page</h1>} />
+				</Switch>
+      		</Router>
+    
 			<div className="content-wrap">
 				<Sidebar 
 					topAnime={topAnime} />
