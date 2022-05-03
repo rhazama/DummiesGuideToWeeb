@@ -17,7 +17,9 @@
   "author": "Taylor Hernandez, Ryan Hazama, and Samantha Pena-Lora",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "favicons-webpack-plugin": "^5.0.2",
+    "webpack-pwa-manifest": "^4.3.0"
   },
   "dependencies": {
     "apollo-server-express": "^2.15.0",

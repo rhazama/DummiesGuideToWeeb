@@ -11,14 +11,14 @@ import {
 
 import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_ME } from '../utils/queries';
-import { remove_anime } from '../utils/mutations';
+import { REMOVE_ANIME } from '../utils/mutations';
 import { removeAnimeId } from '../utils/localStorage';
 
 import Auth from '../utils/auth';
 
 const SavedAnimes = () => {
   const { loading, data } = useQuery(QUERY_ME);
-  const [removeAnime, { error }] = useMutation(remove_anime);
+  const [removeAnime, { error }] = useMutation(REMOVE_ANIME);
 
   const userData = data?.me || {};
 
@@ -56,15 +56,15 @@ const SavedAnimes = () => {
         <h2>
           {userData.savedAnimes?.length
             ? `Viewing ${userData.savedAnimes.length} saved ${
-                userData.savedAnimes.length === 1 ? 'book' : 'books'
+                userData.savedAnimes.length === 1 ? 'anime' : 'animes'
               }:`
-            : 'You have no saved books!'}
+            : 'You have no saved animes!'}
         </h2>
         <Row>
             <Col>
-            {userData.savedBooks?.map((book) => {
+            {userData.savedAnimes?.map((anime) => {
              return (
-                <Card key={book.bookId} border="dark">
+                <Card key={anime.animeId} border="dark">
                     {anime.image ? (
                     <Card.Img
                         src={anime.image}
@@ -79,7 +79,7 @@ const SavedAnimes = () => {
                         className="btn-block btn-danger"
                         onClick={() => handleDeleteAnime(anime.animeId)}
                     >
-                        Delete this Book!
+                        Delete this Anime!
                     </Button>
                     </Card.Body>
                 </Card>
@@ -92,6 +92,6 @@ const SavedAnimes = () => {
   );
 };
 
-export default User;
+export default SavedAnimes;
 
 
